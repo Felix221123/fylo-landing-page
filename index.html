@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"/>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="media-styles.css" type="text/css">
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+
+
+  <body>
+    <main>
+
+      <header>
+        <div class="logo">
+          <img src="images/logo.svg" alt="This is the company's logo" class="company-logo">
+        </div>
+        <nav class="my-nav-features">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="row-1">
+        <article class="header-paragraph-email-submission">
+          <h1>
+            All your files in one secure location, accessible anywhere.
+          </h1>
+
+          <p class="paragraph-under-h1">
+            Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.
+          </p>
+
+          <div class="email-submission">
+            <form action="" id="email-registration">
+              <label for="email">
+                <input type="email" name="email" id="email" spellcheck="true"  placeholder="Enter your email...">
+              </label><br />
+              <div id="error-message" role="alert" aria-live="assertive">
+                Please check your email address.
+              </div>
+              <button class="get-started" type="submit">Get Started</button>
+            </form>
+          </div>
+        </article>
+
+        <div class="files-storage">
+          <img src="images/illustration-1.svg" alt="Individuals putting files in storage folder" class="individuals-files">
+        </div>
+      </section>
+
+      <section class="row-2">
+        <article class="heading-paragraphs-members-quote">
+          <h2>
+            Stay productive, wherever you are
+          </h2>
+          <p class="paragraph-underneath-h2-first">
+            Never let location be an issue when accessing your files. Fylo has you 
+            covered for all of your file storage needs.
+          </p>
+          <p class="paragraph-underneath-h2-second">
+            Securely share files and folders with friends, family and colleagues for 
+            live collaboration. No email attachments required!
+          </p>
+          <p class="how-it-works">
+            <span class="text-here">See how Fylo works</span> 
+            <span class="arrow"><img src="images/icon-arrow.svg" alt="An Image of an arrow" class="arrow-heading-right"></span>
+          </p><hr />
+
+          <div class="members-quotes">
+            <img src="images/icon-quotes.svg" alt="A quotes colon" class="quotes-colon">
+            <p class="quotes-paragraph">
+              Fylo has improved our team productivity by an order of magnitude. Since 
+              making the switch our team has become a well-oiled collaboration machine.
+            </p>
+            <div class="profile">
+              <img src="images/avatar-testimonial.jpg" alt="An image of the person who made the quote" class="profile-pic">
+              <div class="name-position">
+                <p class="members-name">Kyle Burton</p>
+                <p class="position-in-company">Founder &amp; CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+
+        </article>
+
+        <div class="individuals-reviewing-work">
+          <img src="images/illustration-2.svg" alt="Individuals reviewing their work" class="work-review">
+        </div>
+      </section>
+
+      <section class="row-3">
+        <article class="heading-indicating-early-access">
+          <h3>
+            Get early access today
+          </h3>
+          <p class="paragraph-under-h3">
+            It only takes a minute to sign up and our free starter tier is extremely generous. 
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </article>
+
+        <div class="second-email-submission-block">
+          <form action="" id="second-email-form-submission">
+            <label for="second-email">
+              <input type="email" name="email" id="second-email" placeholder="email@example.com">
+            </label>
+            <div id="second-error-message" role="alert" aria-live="assertive">
+              Please check your email address.
+            </div>
+            <button type="submit"  class="second-email-submit">
+              Get Started For Free
+            </button>
+          </form>
+
+        </div>
+      </section>
+
+      <footer>
+        <div class="container-footer-heading-company-logo">
+          <img src="images/logo.svg" alt="The company's logo" class="footer-heading-company-logo">
+        </div>
+
+        <div class="contact-details-about-the-company-and-its-exploration">
+          <ul class="contact-details">
+            <li>
+              <img src="images/icon-phone.svg" alt="An icon of phone" class="phone-img">
+              <span>Phone: +1-543-123-4567</span>
+            </li>
+            <li>
+              <img src="images/icon-email.svg" alt="An icon of email" class="email-img">
+              <span>example@fylo.com</span>
+            </li>
+          </ul>
+
+          <ul class="explore-about-the-company">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
+
+          <ul class="terms-conditons">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+
+          <div class="companys-socials">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+          </div>
+        </div>
+
+      </footer>
+
+    </main>
+  </body>
+</html>

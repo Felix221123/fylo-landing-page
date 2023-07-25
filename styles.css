@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css");
+
+
+/* css variables delared here */
+:root{
+    --fs-raleway:'Raleway', sans-serif;
+    --fs-opensans:'Open Sans', sans-serif;
+    --fw-regular:400;
+    --fw-bold:700;
+
+    --headings-footer-color:hsl(243, 87%, 12%);
+    --button-background-color:hsl(224, 93%, 58%);
+    --email-section-above-footer-background-color:hsl(238, 22%, 44%);
+    --how-it-works-color:hsl(170, 45%, 43%);
+    --text-color:hsl(240, 75%, 98%);
+    --email-placeholder-color:hsl(0, 0%, 75%);
+}
+
+html, 
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before , *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*{
+    font: inherit;
+}
+
+
+/* these css are mobile first worklfow */
+
+header{
+    display: flex;
+    padding: 2em 1.5rem;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+}
+
+.company-logo{
+    width: 5rem;
+}
+
+.my-nav-features ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+    
+}
+
+.my-nav-features ul li a{
+    text-decoration: none;
+    color: var(--headings-footer-color);
+    font-family: var(--fs-raleway);
+    font-size: 0.85rem;
+    font-weight:var(--fw-regular) ;
+    
+}
+
+.row-1{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.files-storage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    
+}
+
+.individuals-files{
+    width: 95%;
+}
+
+.header-paragraph-email-submission h1{
+    color: var(--headings-footer-color);
+    font-family: var(--fs-raleway);
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 1.7rem;
+    font-weight:var(--fw-bold);
+    margin: 1.2rem auto;
+}
+
+.header-paragraph-email-submission .paragraph-under-h1{
+    color: var(--headings-footer-color);
+    margin: 1.5rem auto;
+    text-align: center;
+    font-family: var(--fs-opensans);
+    padding: 0rem 2rem;
+    font-size: 0.95rem;
+}
+#email-registration{
+    display: grid;
+    place-items: center;
+}
+input[id=email]{
+    padding: 0.65rem 8rem 0.65rem 1rem;
+    font-size: 0.8rem;
+    font-family: var(--fs-opensans);
+    margin: 1rem auto 0rem auto;
+    color: var(--headings-footer-color);
+    border: 1.55px solid blue;
+    border-top:1.55px solid blue;
+    border-left:1.55px solidvar(--headings-footer-color);
+    border-right:1.55px solid blue;
+    border-bottom:1.55px solidvar(--headings-footer-color);
+    border-radius: 0.2rem;
+}
+
+input:focus , input:active{
+    border-color: var(--button-background-color);
+    color: var(--headings-footer-color);
+}
+
+#error-message{
+    display: none;
+    color: var(--text-color);
+    font-family: var(--fs-opensans);
+    font-size: 0.8rem;
+}
+.get-started{
+    padding: 0.65rem 6.6rem 0.65rem 6.6rem;
+    text-align: center;
+    font-family: var(--fs-opensans);
+    font-size: 0.85rem;
+    color: var(--text-color);
+    background-color: var(--button-background-color);
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    box-shadow: 0px 5px 10px rgba(115, 116, 133, 0.5);
+}
+.get-started:hover, .get-started:active{
+    --active-button-background-color:hsla(224, 93%, 58%, 0.7);
+    background-color: var(--active-button-background-color);
+}
+
+.row-2{
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 6rem;
+
+}
+
+.individuals-reviewing-work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.work-review{
+    width: 95%;
+}
+
+.heading-paragraphs-members-quote h2{
+    font-family: var(--fs-raleway);
+    text-align: center;
+    font-weight:var(--fw-bold);
+    color: var(--headings-footer-color);
+    margin:3rem auto 1rem auto;
+    font-size: 1.2rem;
+}
+
+.paragraph-underneath-h2-first{
+    text-align: left;
+    font-family: var(--fs-opensans);
+    font-size: 0.95rem;
+    margin: 0.5rem 1rem 1.5rem 1.5rem;
+    color: var(--headings-footer-color);
+    opacity: 0.85;
+
+}
+.paragraph-underneath-h2-second{
+    text-align: left;
+    font-family: var(--fs-opensans);
+    font-size: 0.95rem;
+    margin: 0.5rem 1rem 1.5rem 1.5rem;
+    color: var(--headings-footer-color);
+    opacity: 0.85;
+}
+
+p.how-it-works{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--fs-opensans);
+    column-gap: 0.3rem;
+    margin: 3rem auto 0.08rem auto;
+    font-weight: 400;
+}
+
+p.how-it-works:active, 
+p.how-it-works:hover{
+    cursor: pointer;
+}
+
+hr{
+    width: 37%;
+    display: grid;
+    place-items: center;
+    margin: 0rem auto;
+    border: none;
+    border-bottom: 1px solid var(--how-it-works-color);
+}
+.text-here{
+    font-size: 0.8rem;
+    color: var(--how-it-works-color)
+}
+
+.members-quotes{
+    max-width: 83%;
+    max-height: 20%;
+    background-color: white;
+    border-radius: 0.2rem;
+    margin: 2.5rem auto 5rem auto;
+    padding: 1.2rem 1rem 1rem 1.5rem;
+    box-shadow: 0px 5px 30px rgba(115, 116, 133, 0.3);
+
+}
+
+.quotes-paragraph{
+    font-family:var(--fs-opensans);
+    font-size: 0.78rem;
+    margin-top: 0.4rem;
+    line-height: 1.25rem;
+    color: var(--headings-footer-color);
+    font-weight: var(--fw-regular);
+}
+
+.profile{
+    display: flex;
+    margin-top: 1rem;
+    column-gap:0.5rem;
+    align-items: center;
+}
+.profile-pic{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+}
+.name-position{
+    color: var(--headings-footer-color);
+    font-family: var(--fs-opensans);
+}
+.members-name{
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+}
+.position-in-company{
+    font-size: 0.5rem;
+    font-weight: var(--fw-regular);
+}
+
+.row-3{
+    --background-color:hsla(243, 87%, 12%, 0.6);
+    background-color: var(--background-color);
+    padding: 4rem 2.3rem 4rem 2.3rem;
+}
+.heading-indicating-early-access h3{
+    font-family: var(--fs-raleway);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    color: var(--text-color);
+    margin-bottom:1.5rem;
+    
+}
+.paragraph-under-h3{
+    text-align: center;
+    font-family: var(--fs-opensans);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom:1.5rem;
+    padding: 0rem 0.6rem;
+}
+form#second-email-form-submission{
+    display: grid;
+    place-items: center;
+    row-gap: 0.5rem;
+}
+input[id=second-email]{
+    --color-for-text:hsla(0, 0%, 75%, 0.9);
+    width: 16rem;
+    height: 2.1rem;
+    padding: 0rem 0.6rem;
+    font-size: 0.7rem;
+    color: var(--headings-footer-color);
+    border-radius: 0.15rem;
+    font-family: var(--fs-opensans);
+    border: none;
+
+}
+#second-error-message{
+    display: none;
+    color: var(--text-color);
+    font-family: var(--fs-opensans);
+    font-size: 0.8rem;
+}
+.second-email-submit{
+    width: 16rem;
+    height: 2.1rem;
+    font-family: var(--fs-opensans);
+    color: var(--text-color);
+    background-color: var(--button-background-color);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.65rem;
+    font-weight:600 ;
+
+}
+.second-email-submit:hover, .second-email-submit:active{
+    --active-button-background-color:hsla(224, 93%, 58%, 0.7);
+    background-color: var(--active-button-background-color);
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: var(--headings-footer-color);
+    color:var(--text-color);
+    padding: 5rem 4rem 4rem 3rem;
+}
+.container-footer-heading-company-logo{
+    margin-bottom: 2rem;
+}
+.footer-heading-company-logo{
+    filter:brightness(0) invert(1) ;
+}
+
+ul li{
+    list-style: none;
+}
+.contact-details-about-the-company-and-its-exploration{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details{
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+.contact-details li{
+    font-family: var(--fs-opensans);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    column-gap: 1rem;
+}
+.explore-about-the-company{
+    margin-bottom:2.5rem ;
+}
+.explore-about-the-company li:active, 
+.explore-about-the-company li:hover , 
+.terms-conditons li:active, 
+.terms-conditons li:hover{
+    color: var(--button-background-color);
+}
+
+.explore-about-the-company li{
+    font-family: var(--fs-opensans);
+    margin-bottom: 1rem;
+
+}
+.terms-conditons{
+    margin-bottom: 2.5rem;
+}
+.terms-conditons li{
+    font-family: var(--fs-opensans);
+    margin-bottom: 1rem;
+}
+.companys-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.8rem;
+
+}
+
+.companys-socials div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.companys-socials div:active, 
+.companys-socials div:hover{
+    border-color: var(--button-background-color);
+    color: var(--button-background-color);
+}

@@ -1,0 +1,367 @@
+@import url("styles.css");
+
+
+@media (min-width:600px) {
+    .company-logo{
+        width: 6.5rem;
+    }
+    .my-nav-features ul li a{
+        font-size: 1rem;
+        
+    }
+    .individuals-files{
+        width: 90%;
+    }
+    .header-paragraph-email-submission h1{
+        font-size: 1.6rem;
+        padding: 0rem 4rem;
+    }
+    .header-paragraph-email-submission .paragraph-under-h1{
+        font-size: 1rem;
+        padding: 0rem 6rem;
+    }
+    .work-review{
+        width: 90%;
+    }
+    .heading-paragraphs-members-quote h2{
+        font-size: 1.5rem;
+    }
+    .paragraph-underneath-h2-first,
+    .paragraph-underneath-h2-second{
+        font-size: 1rem;
+    }
+    hr{
+        width:27%;
+    }
+    .text-here{
+        font-size: 0.95rem;  
+    }
+    .members-quotes{
+        max-width: 55%;
+        max-height: 25%;
+    }
+    .heading-indicating-early-access h3{
+        font-size: 1.5rem;
+    }
+    .paragraph-under-h3{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:1200px){
+    header{
+        padding: 3rem 5rem;
+    }
+    .company-logo{
+        width: 9rem;
+    }
+    .my-nav-features ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        width: max-content;
+        
+    }
+    .my-nav-features ul li a{
+        font-size: 0.9rem;
+        font-weight: 500;
+        
+    }
+    .row-1{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        align-items: center;
+        padding: 0rem 5rem;
+    }
+    .header-paragraph-email-submission{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-paragraph-email-submission h1{
+        color: var(--headings-footer-color);
+        text-align: left;
+        padding: 0rem;
+        font-size: 2.3rem;
+        font-weight:var(--fw-bold);
+        margin-bottom: 0.8rem;
+        margin-left:0rem;
+        margin-right:0rem;
+        margin-top: 1rem;
+    }
+    .header-paragraph-email-submission .paragraph-under-h1{
+        text-align: left;
+        padding: 0rem 0rem;
+        margin: 0.1rem auto;
+        font-size: 1.1rem;
+
+    }
+    #email-registration{
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.5rem;
+        justify-content: left;
+        
+    }
+    input[id=email]{
+        padding: 0.65rem 9rem 0.65rem 1rem;
+    }
+    .files-storage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+    .get-started{
+        margin-top: 0.9rem;
+        padding: 0.65rem 3rem 0.65rem 3rem;
+        font-size: 0.85rem;
+    }
+    .row-2{
+        display: grid;
+        grid-template-columns: 0.45fr 0.5fr;
+        align-items: center;
+        place-items: left;
+        padding: 7rem 5rem 4rem 5rem;
+        
+    }
+    .heading-paragraphs-members-quote{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+    }
+    .individuals-reviewing-work{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-top: 0rem;
+    }
+    .work-review{
+        width: 95%;
+    }
+    .heading-paragraphs-members-quote h2{
+        font-size: 2.2rem;
+        text-align: left;
+        margin: 1.5rem 0rem;
+    }
+    .paragraph-underneath-h2-first,
+    .paragraph-underneath-h2-second{
+        font-size: 0.9rem;
+        padding: 0rem 4rem 0rem 0rem;
+        margin: 0.5rem 0rem;
+    }
+    p.how-it-works{
+        display: flex;
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-right:0rem;
+        margin-left:0rem ;
+        justify-content: left;
+
+    }
+    hr{
+        width:28%;
+        display: grid;
+        place-items: center;
+        margin: 0rem;
+    }
+    .text-here{
+        font-size: 0.95rem;  
+    }
+    .members-quotes{
+        max-width: 55%;
+        max-height: 25%;
+        margin: 3rem 0rem;
+    }
+    .row-3{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        place-items: left;
+        padding: 6rem 3rem 4rem 5rem;
+        column-gap:3rem;
+    }
+    .heading-indicating-early-access{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+    }
+    .heading-indicating-early-access h3{
+        text-align: left;
+        font-size: 2rem;
+    }
+    .paragraph-under-h3{
+        text-align: left;
+        font-size: 1rem;
+        padding: 0rem 8rem 0rem 0rem;
+    }
+    footer{
+        padding: 7rem 5rem 4rem 5rem;
+    }
+    
+    .contact-details-about-the-company-and-its-exploration{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top:2em;
+        font-size: 1rem;
+    }
+    ul{
+        margin-right: calc(100% / 6);
+    }
+    input[id=second-email]{
+        width: 25rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+    .second-email-submit{
+        width: 12rem;
+        height: 2.5rem;
+        margin-right: 13rem;
+        font-size: 0.75rem;
+
+    }
+    form#second-email-form-submission{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 0.5rem;
+    }
+
+    
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .companys-socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .terms-conditons{
+        margin-bottom:0rem;
+    }
+}
+
+/* @media (min-width:1400px){
+    header{
+        padding: 3rem 2rem;
+    }
+    .company-logo{
+        width: 9rem;
+    }
+    .my-nav-features ul li{
+        margin-right: 2rem;
+    }
+    .my-nav-features ul li a{
+        font-size: 1.1rem;
+        font-weight: 500;
+        
+    }
+    .row-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .header-paragraph-email-submission{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-paragraph-email-submission h1{
+        color: var(--headings-footer-color);
+        font-family: var(--fs-opensans);
+        text-align: left;
+        padding: 0rem;
+        background-color: red;
+
+        font-size: 3rem;
+        font-weight:var(--fw-bold);
+        margin-bottom: 0.5rem;
+        margin-left:0rem;
+        margin-right:0rem;
+        margin-top: 1rem;
+    }
+    .header-paragraph-email-submission .paragraph-under-h1{
+        text-align: left;
+        padding: 0rem 0rem;
+        margin: 0.1rem auto;
+        font-size: 0.3rem;
+
+    }
+    #email-registration{
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.7rem;
+        justify-content: left;
+        padding: 0rem 3rem 0rem 7rem;
+        
+    }
+    .get-started{
+        margin-top: 0.9rem;
+        padding: 0.65rem 4rem 0.65rem 4rem;
+    }
+    .individuals-files{
+        width: 90%;
+    }
+    .header-paragraph-email-submission h1{
+        font-size: 1.7rem;
+        padding: 0rem 8rem;
+    }
+    .header-paragraph-email-submission .paragraph-under-h1{
+        font-size: 1.1rem;
+        padding: 0rem 7rem;
+    }
+    .work-review{
+        width: 90%;
+    }
+    .heading-paragraphs-members-quote h2{
+        font-size: 1.7rem;
+    }
+    .paragraph-underneath-h2-first,
+    .paragraph-underneath-h2-second{
+        font-size: 1rem;
+        padding: 0rem 4rem;
+    }
+    hr{
+        width:17%;
+    }
+    .text-here{
+        font-size: 0.95rem;  
+    }
+    .members-quotes{
+        max-width: 30%;
+        max-height: 25%;
+    }
+    .heading-indicating-early-access h3{
+        font-size: 1.6rem;
+    }
+    .paragraph-under-h3{
+        font-size: 1.1rem;
+        padding: 0rem 3rem;
+    }
+    
+    .contact-details-about-the-company-and-its-exploration{
+        display: flex;
+        flex-direction: row;
+        column-gap: 7rem;
+        margin-top:2em;
+        font-size: 1rem;
+    }
+    
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .companys-socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .terms-conditons{
+        margin-bottom:0rem;
+    }
+} */
